@@ -388,6 +388,10 @@ module Rails
         options[:skip_asset_pipeline]
       end
 
+      def skip_bundle_audit?
+        options[:skip_bundle_audit]
+      end
+
       def skip_thruster?
         options[:skip_thruster]
       end
