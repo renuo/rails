@@ -177,7 +177,7 @@ module Rails
         remove_file "config/initializers/cors.rb"
       end
 
-      if !bundle_audit_config_exist
+      if !skip_bundle_audit? && !bundle_audit_config_exist
         template "config/bundler-audit.yml"
       end
 
