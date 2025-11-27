@@ -34,6 +34,7 @@ module Rails
   eager_autoload do
     autoload :HealthController
     autoload :PwaController
+    autoload :DevtoolsController
   end
 
   class << self
